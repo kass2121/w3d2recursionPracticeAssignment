@@ -1,4 +1,3 @@
-
 "use strict";
 /* You need the assert and function name declarations to test in node.  
 Comment these out when you send it to the browser with the index.html mocha setup page. 
@@ -26,7 +25,7 @@ describe("spread operator tests", function () {
         const oldArr = [1, 2, 3];
         const newArr = copyArray(oldArr);
         assert.deepEqual(newArr, oldArr);
-        oldArr.push[4];
+        newArr.push(4);
         assert.deepEqual(oldArr, [1, 2, 3]);
     });
 
